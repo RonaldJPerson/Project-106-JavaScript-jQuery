@@ -1,0 +1,9 @@
+main{
+    display: flex;
+}
+
+.list {
+    flex: 1;
+    background-color: aqua
+    }
+   
