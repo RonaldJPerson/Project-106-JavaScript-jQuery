@@ -37,7 +37,33 @@
       <div id="list" class="list"></div>
     </section>
   </main>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <form id="taskForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" required></textarea>
+
+    <label for="color">Color:</label>
+    <input type="color" id="color" required>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" required>
+
+    <label for="status">Status:</label>
+    <select id="status" required>
+        <option value="pending">Pending</option>
+        <option value="in-progress">In Progress</option>
+        <option value="completed">Completed</option>
+    </select>
+
+    <label for="budget">Budget:</label>
+    <input type="number" id="budget" required>
+
+    <button type="submit">Create Task</button>
+</form>
+<div id="taskDisplay"></div>
+  <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
   <script src="/scripts/Task.js"></script>
   <script src="/scripts/app.js"></script>
   <script src="/scripts/test.js"></script>
